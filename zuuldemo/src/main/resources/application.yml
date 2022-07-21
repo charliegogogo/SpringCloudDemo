@@ -1,0 +1,11 @@
+server:
+  port: 1010
+spring:
+  application:
+    name: zuuldemo
+zuul:
+  prefix: /api
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9090/eureka
