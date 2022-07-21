@@ -6,7 +6,7 @@ server:
 spring:
   application:
     # 应用名称
-    name: spring-cloud-demo
+    name: service-demo
   # 数据源配置
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver

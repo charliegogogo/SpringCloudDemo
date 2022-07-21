@@ -21,15 +21,17 @@ public class SwaggerConfig {
 
     //配置文档信息
     private ApiInfo apiInfo() {
-        Contact contact = new Contact("Charlie", "http://xxx.xxx.com/联系人访问链接", "联系人邮箱");
+        Contact contact = new Contact("Charlie",
+                "https://github.com/charliegogogo",
+                "charliegogogo338@gmail.com");
         return new ApiInfo(
-                "Swagger学习", // 标题
-                "学习演示如何配置Swagger", // 描述
-                "v1.0", // 版本
-                "http://terms.service.url/组织链接", // 组织链接
+                "Spring Boot Demo项目标题", // 标题
+                "Spring Boot Demo项目描述", // 描述
+                "V1.0", // 版本
+                "https://github.com/charliegogogo", // 组织链接
                 contact, // 联系人信息
-                "Apach 2.0 许可", // 许可
-                "许可链接", // 许可连接
+                "", // 许可
+                "", // 许可连接
                 new ArrayList<>()// 扩展
         );
     }
