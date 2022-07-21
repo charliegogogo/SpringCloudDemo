@@ -19,13 +19,13 @@
 
     <dependencies>
 
-        <!--网关依赖-->
+        <!-- 网关依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
 
-        <!--添加eureka客户端-->
+        <!-- 添加eureka客户端 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>

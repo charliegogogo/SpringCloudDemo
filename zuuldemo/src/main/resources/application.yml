@@ -4,8 +4,17 @@ spring:
   application:
     name: zuuldemo
 zuul:
-  prefix: /api
+  # 路由规则
+  routes:
+    # 只要请求路径匹配到“/charlie/**”的就直接转发到service-demo服务中
+    # 例如：访问“http://localhost:1010/service-demo/user/add”相当于访问“http://localhost:1111/user/add”
+    service-demo:
+      path: /service-demo/**
+      serviceId: service-demo
 eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:9090/eureka
+  instance:
+    # ip优先相互通信
+    prefer-ip-address: true

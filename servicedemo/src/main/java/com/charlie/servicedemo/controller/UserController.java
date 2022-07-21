@@ -25,7 +25,7 @@ import javax.annotation.Resource;
 @RestController
 @ApiSort(value = 1)
 @Api(tags = "1.用户接口", value = "用户接口")
-@RequestMapping("/charlie/user")
+@RequestMapping("/user")
 public class UserController {
 
     @Resource
@@ -36,7 +36,7 @@ public class UserController {
             notes = "30000:新增用户成功; "
     )
     @ApiOperationSort(value = 1)
-    @GetMapping("/test")
+    @GetMapping("/add")
     public void test() {
         User user = new User();
         user.setName("王老五");
