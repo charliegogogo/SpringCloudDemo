@@ -1,4 +1,4 @@
-package com.charlie.servicedemo;
+package com.charlie.authenticationdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,10 +11,10 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @EnableEurekaClient
 @EnableFeignClients
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-public class ServicedemoApplication {
+public class AuthenticationdemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServicedemoApplication.class, args);
+        SpringApplication.run(AuthenticationdemoApplication.class, args);
     }
 
 }

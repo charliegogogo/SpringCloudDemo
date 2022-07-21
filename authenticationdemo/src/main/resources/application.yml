@@ -1,18 +1,18 @@
 # Tomcat
 server:
-  port: 1111
+  port: 1212
 
 # Spring
 spring:
   application:
     # 应用名称
-    name: service-demo
+    name: authentication-demo
   # 数据源配置
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
     password: root
-    url: jdbc:mysql://localhost:3306/charlie?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true&rewriteBatchedStatements=true
+    url: jdbc:mysql://localhost:3306/authentication?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true&rewriteBatchedStatements=true
 
 eureka:
   client:
@@ -81,4 +81,3 @@ hystrix:
         requestVolumeThreshold: 3
         # 默认5S，等5S之后熔断器会处于半开状态，然后下一次请求的正确和错误讲决定熔断器是否真的关闭和是否继续打开
         sleepWindowInMilliseconds: 8000
-
